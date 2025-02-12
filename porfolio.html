@@ -1,44 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HTML 5 Boilerplate</title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <header>
-        <h1>Ian Miclean</h1>
-        <nav>
-            <li>About</li>
-            <li>Projects</li>
-            <li>Contact</li>
-        </nav>
-    </header>
-    <div id="about">
-        <h2>About</h2>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ian Miclean Portfolio</title>
+  <!-- Link to the CSS file -->
+  <link rel="stylesheet" href="./resources/css/styles.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <div class="container header-container">
+      <div class="logo">
+        <!-- Placeholder for a logo image or monogram -->
+        <!-- If you have a logo image, replace the span with an <img> tag -->
+        <a href="#">
+          <span class="monogram">IM</span>
+          <span class="logo-text">Ian Miclean</span>
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Technical Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#visualizations">Data Visualizations</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-    <div id="certifications">
-        <h2>Certifications</h2>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <!-- Hero Overlay for animated background -->
+    <div class="hero-overlay">
+      <!-- Placeholder: Use CSS animations or a JS library for a subtle data network effect -->
     </div>
-    <div id="projects">
-        <h2>Projects</h2>
+    <div class="hero-content">
+      <h1>Digital Marketing &amp; Software Engineering Professional</h1>
+      <p>Leveraging data analytics and technical expertise to drive digital success.</p>
+      <a class="btn" href="#projects">Explore My Work</a>
     </div>
-    <div id="quote">
-        <h2>Quote Block</h2>
+  </section>
+
+  <!-- Interactive Data Visualizations Section -->
+  <section id="visualizations" class="visualizations">
+    <div class="container">
+      <h2>Interactive Data Visualizations</h2>
+      <div class="viz-grid">
+        <!-- Visualization Card 1 -->
+        <div class="viz-card">
+          <!-- Placeholder for an interactive chart (e.g., via D3.js or Chart.js) -->
+          <div class="viz-placeholder">Chart Placeholder 1</div>
+          <p>Interactive visualization description.</p>
+        </div>
+        <!-- Visualization Card 2 -->
+        <div class="viz-card">
+          <div class="viz-placeholder">Chart Placeholder 2</div>
+          <p>Interactive visualization description.</p>
+        </div>
+        <!-- Additional visualization cards can be added here -->
+      </div>
     </div>
-    <div id="featured">
-        <h2>Featured Content</h2>
+  </section>
+
+  <!-- Portfolio & Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2>Portfolio &amp; Projects</h2>
+      <div class="projects-grid">
+        <!-- Project Card 1 -->
+        <div class="project-card">
+          <!-- Placeholder for project image -->
+          <img src="path/to/project-image1.jpg" alt="Project 1">
+          <!-- Replace the src with the actual path to your project image -->
+          <div class="project-info">
+            <h3>Project Title 1</h3>
+            <p>Brief description of the project. (Tech stack, challenges, results, etc.)</p>
+          </div>
+        </div>
+        <!-- Project Card 2 -->
+        <div class="project-card">
+          <img src="path/to/project-image2.jpg" alt="Project 2">
+          <div class="project-info">
+            <h3>Project Title 2</h3>
+            <p>Brief description of the project. (Tech stack, challenges, results, etc.)</p>
+          </div>
+        </div>
+        <!-- Add more project cards as needed -->
+      </div>
     </div>
-    <footer>
-        <h2>Ian Miclean</h2>
-        <nav>
-            <li>About</li>
-            <li>Projects</li>
-            <li>Contact</li>
-        </nav>
-    </footer>
-    <script src="portfolio.js"></script>
-  </body>
+  </section>
+
+  <!-- Technical Skills & Experience Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2>Technical Skills &amp; Experience</h2>
+      <div class="skills-list">
+        <!-- Skill 1 -->
+        <div class="skill">
+          <h3>SEO</h3>
+          <div class="progress">
+            <div class="progress-bar" style="width: 80%;">80%</div>
+          </div>
+        </div>
+        <!-- Skill 2 -->
+        <div class="skill">
+          <h3>Data Analytics</h3>
+          <div class="progress">
+            <div class="progress-bar" style="width: 90%;">90%</div>
+          </div>
+        </div>
+        <!-- Skill 3 -->
+        <div class="skill">
+          <h3>Marketing Automation</h3>
+          <div class="progress">
+            <div class="progress-bar" style="width: 75%;">75%</div>
+          </div>
+        </div>
+        <!-- Skill 4 -->
+        <div class="skill">
+          <h3>CRM Management</h3>
+          <div class="progress">
+            <div class="progress-bar" style="width: 85%;">85%</div>
+          </div>
+        </div>
+        <!-- Skill 5 -->
+        <div class="skill">
+          <h3>Programming</h3>
+          <div class="progress">
+            <div class="progress-bar" style="width: 70%;">70%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>If you'd like to get in touch, please email me at <a href="mailto:email@example.com">email@example.com</a> or connect via social media.</p>
+      <!-- Optional: Contact Form -->
+      <form action="#" method="post">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container footer-container">
+      <p>&copy; 2025 Ian Miclean. All rights reserved.</p>
+      <div class="social-icons">
+        <!-- Placeholder for social media icons (e.g., FontAwesome icons) -->
+        <a href="#" title="LinkedIn"><!-- Icon Placeholder --></a>
+        <a href="#" title="Twitter"><!-- Icon Placeholder --></a>
+        <a href="#" title="GitHub"><!-- Icon Placeholder --></a>
+      </div>
+    </div>
+  </footer>
+  <script src="scripts.js"></script>
+</body>
 </html>
